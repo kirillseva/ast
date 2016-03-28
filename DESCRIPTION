@@ -12,6 +12,8 @@ Depends:
 License: MIT
 LazyData: true
 Imports:
+    crayon
 Suggests:
     testthat
 Roxygen: list(wrap = FALSE)
+RoxygenNote: 5.0.1.9000

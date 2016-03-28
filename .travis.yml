@@ -3,7 +3,7 @@ cache: packages
 warnings_are_errors: false
 
 r_github_packages:
-  - jimhester/covr
+  - kirillseva/covr
 after_success:
   - Rscript -e 'covr::codecov()'
 notifications:

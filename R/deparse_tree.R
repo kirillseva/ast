@@ -1,6 +1,6 @@
 deparse_tree <- function(x) {
   if (is.atomic(x) || is.name(x)) {
-    `class<-`(x, 'ast_node')
+    x
   } else if (is.call(x) || is.pairlist(x)) {
     `class<-`(lapply(x, deparse_tree), 'ast_node')
   } else {

@@ -1,1 +1,1 @@
-is.ast_node <- function(x) { is(x, "AST_node") }
+is.ast_node <- function(x) { is(x, "ast_node") }

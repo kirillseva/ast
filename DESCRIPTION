@@ -1,0 +1,17 @@
+Package: ast
+Type: Package
+Title: ast (http://github.com/kirillseva/ast)
+Description: Helpers for writing R macros.
+Version: 0.0.0.9000
+Author: Kirill Sevastyanenko <kirillseva@gmail.com>
+Maintainer: Kirill Sevastyanenko <kirillseva@gmail.com>
+Authors@R: c(person("Kirill", "Sevastyanenko",
+    email = "kirillseva@gmail.com", role = c("aut", "cre")))
+Depends:
+    R (>= 3.0.1)
+License: MIT
+LazyData: true
+Imports:
+Suggests:
+    testthat
+Roxygen: list(wrap = FALSE)

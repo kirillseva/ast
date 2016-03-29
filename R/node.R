@@ -27,3 +27,12 @@ set_root <- function(x, new_root) {
   stopifnot(class(root(x)) == class(new_root))
   if (length(x) > 0) { x[[1]] <- new_root; x } else { new_root }
 }
+
+compile <- function(x) {
+  if (is.ast_node(x)) {
+    as.call(append(
+      list(x[[1]]),
+      lapply(children(x), compile)
+    ))
+  } else { x }
+}
